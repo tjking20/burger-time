@@ -1,35 +1,39 @@
-<h1>Burger Time!</h1>
 
 
-<div id="burgers-to-eat">
-	<h3>Order up!</h3>
-	<ul>
-		{{#each burgers}}
-			{{#unless devoured}}
-				<li> 
-				{{this.burger_name}} 
-				{{>update-burger}}
-				</li> 
-			{{/unless}}
-		{{/each}}
-	</ul>
+<div class="row">
+	<div id="burgers-to-eat" class="col-lg-6" align="center">
+		<h3>Order up!</h3>
+		<ul>
+			{{#each burgers}}
+				{{#unless devoured}}
+					<li> 
+					{{this.burger_name}} 
+					{{>update-burger}}
+					</li> 
+				{{/unless}}
+			{{/each}}
+		</ul>
+	</div>
+
+	<div id="burgers-devoured" class="col-lg-6" align="center">
+		<h3>Burgers that been ate</h3>
+		<ul>
+			{{#each burgers}}
+				{{#if devoured}}
+					<li> 
+						{{this.burger_name}}
+					</li>
+				{{/if}}
+			{{/each}}
+		</ul>
+	</div>
 </div>
-
-<div id="burgers-devoured">
-	<h3>Burgers that been ate</h3>
-	<ul>
-		{{#each burgers}}
-			{{#if devoured}}
-				<li> 
-					{{this.burger_name}}
-				</li>
-			{{/if}}
-		{{/each}}
-	</ul>
+<div class="row">
+	<div class="col-lg-12" align="center">
+		<form action="/create" method="post">
+			<textarea id="burgerName" type="textarea" placeholder="enter burger orer here..." name="burgerName"></textarea>
+			<br>
+			<button class="btn btn-primary"type="submit">Order Here!</button>
+		</form>
+	</div>
 </div>
-
-<form action="/create" method="post">
-	<textarea type="textarea" placeholder="enter burger orer here..." name="burgerName"></textarea>
-	<br>
-	<button type="submit">Order Here!</button>
-</form>

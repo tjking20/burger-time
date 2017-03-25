@@ -1,0 +1,37 @@
+body{
+	background-color: #FBAB1A;
+	color: #7500FD;
+}
+
+img{
+	width: 150px;
+}
+
+button{
+	background-color: #EEEEEE;
+
+}
+button:hover{
+	background-color: #7500FD;
+	color: #EEEEEE;
+}
+
+ul{
+	list-style-type: none;
+}
+header{
+	width: 100%;
+}
+
+li{
+	background-color: #EEEEEE;
+	font-size: 18px;
+	height: 75px;
+	width: 300px;
+	border: 1px solid #7500FD;
+}
+
+#burgerName{
+	width: 300px;
+	height: 150px;
+}
