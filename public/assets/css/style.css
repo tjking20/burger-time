@@ -1,6 +1,8 @@
 body{
 	background-color: #FBAB1A;
 	color: #7500FD;
+	font-family: 'Space Mono', monospace;
+
 }
 
 img{
@@ -34,4 +36,9 @@ li{
 #burgerName{
 	width: 300px;
 	height: 150px;
+}
+
+textarea{
+	background-color: #6D6C6B;
+	color: #BBE8E8;
 }
