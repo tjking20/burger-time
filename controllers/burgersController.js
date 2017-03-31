@@ -3,21 +3,21 @@ var router = express.Router();
 
 var burger = require("../models/burger.js")
 
+
+//finds all existing burgers
 router.get("/", function(req, res){
-	// res.send("hi")
 	burger.all(function(data){
 		var hbsObject = {
 			burgers: data
 		};
-		// res.send(hbsObject);
 		console.log(hbsObject);
 		res.render("index", hbsObject)
 	});
 });
 
+
+//adds new burger to database
 router.post("/create", function(req, res){
-	// res.send('hi') wokrs
-	// res.send(req.body.burgerName) works
 	burger.create([
     "burger_name"
     ], [
