@@ -7,11 +7,11 @@ This application is an example of a simple MVC Framework, with a NodeJS API that
 
 ### Create a new burger
 
-!["gif of post request"] (public/assets/images/burger-create.gif)
+!["gif of post request"](public/assets/images/burger-create.gif)
 
 ### "Eat" a new burger
 
-!["gif of put request"] (public/assets/images/burger-put.gif)
+!["gif of put request"](public/assets/images/burger-put.gif)
 
 
 ## Technologies
